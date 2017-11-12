@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% load static from staticfiles %}
+
+{% block title %}Klypp Home{% endblock %}
+
+{% block sticky_footer %}<div class="pushTheFooter">{% endblock %}
+
+{% block content %}
+
+    <!--The links below drive business and must always be front and center-->
+    <div class="jumbotron container">
+        <h1>Great Haircuts, Lower Price</h1>
+        <p class="lead">Klypp provides customers with easy access to great stylists for a lower price than they would normally find at a salon. It also gives independent stylists an easy way to connect with potential clients.</p>
+        <a title="Get a great cut today!" href="FindAStylist.html" class="btn btn-success btn-large">Find a Klypp Stylist</a>
+        <a title="Your path to more clients" href="BecomeAStylist.html" class="btn btn-large btn-default">Become a Klypp Stylist</a>
+    </div>
+
+    <!--First row-->
+    <div class="container row">
+        <div class="col-md-6">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet gravida fringilla. Curabitur venenatis metus viverra metus rhoncus, vitae scelerisque nibh porta. Proin vel mi in ex vestibulum sollicitudin. Nunc at felis efficitur, dapibus urna nec, aliquet nisl. Mauris tortor erat, vehicula convallis lorem id, facilisis condimentum urna. Nulla sollicitudin quis enim ac pharetra. Praesent ut ullamcorper urna. Nunc semper nulla at nisi tincidunt, quis accumsan lorem ullamcorper. Vivamus in dictum turpis. Proin nec nisi diam. Fusce vitae lorem pellentesque, rutrum ligula id, porta justo. Nam sed quam quis ligula finibus efficitur a quis justo. Nulla tristique lobortis justo cursus lobortis. Curabitur id massa et odio elementum auctor.
+            </p>
+        </div>
+        <img class="col-md-6 img-responsive" src="{% static 'images/Cat600x420.jpg' %}" title="Happy Client" alt="Happy client">
+    </div>
+
+    <!--Second row-->
+    <div class="container row">
+        <p class="col-md-6 col-md-push-6">
+            Pellentesque eu magna sed lorem tincidunt accumsan. Proin tincidunt felis quis felis tincidunt vehicula. Proin eu vestibulum tellus. Sed congue dui vel volutpat tristique. Proin magna massa, imperdiet nec leo et, cursus condimentum quam. Ut non turpis eu neque consectetur luctus eu malesuada turpis. Praesent hendrerit nisl tortor. Maecenas ipsum mi, facilisis at augue sit amet, congue feugiat justo. Nunc quam augue, pharetra at nunc ut, ultrices eleifend eros. Pellentesque dolor felis, eleifend nec nisi a, laoreet volutpat ex. Maecenas eu enim ut enim interdum pellentesque non id massa. Suspendisse sem urna, dignissim sit amet eros quis, luctus ultricies nibh. Morbi dignissim urna urna, ac pretium tellus rutrum in. Nam in dolor tellus. Cras vestibulum, tellus ac lobortis molestie, magna arcu rutrum tortor, ac iaculis ligula urna ac odio.
+        </p>
+        <img class="col-md-6 col-md-pull-6 img-responsive" src="{% static 'images/Cat500x300.jpg' %}" title="Skilled Stylist" alt="Skilled stylist">
+    </div>
+
+{% endblock %}

@@ -1,2 +1,4 @@
 # klypp_with_python
-A copy of the Klypp website with a Python backend added that allows users to create stylist and client profiles
+This is a site aims to provide independent hairstylists with a place to connect with potential clients.
+I personally have had difficulty making appointments with independent stylists and would like to ease that process for
+other people.

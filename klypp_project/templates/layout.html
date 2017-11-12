@@ -1,0 +1,59 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link rel='stylesheet' media='screen' href="{% static 'css/site.css' %}"/>
+
+</head>
+<body>
+    {% block sticky_footer %}{% endblock %}
+        <!--Navbar-->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <!--Navbar button for mobile devices-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">Klypp</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a title="Get a great cut today!" href="FindAStylist.html">Find a Stylist</a></li>
+                        <li><a title="Your path to more clients" href="BecomeAStylist.html">Be a Stylist</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Safety.html">Safety</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--End navbar-->
+
+{% block content %}{% endblock %}
+    </div>
+    <footer class="mainFooter">
+        <p class="footerText">&copy; 2017 Klypp</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/myJS.js' %}"></script>
+</body>
+</html>

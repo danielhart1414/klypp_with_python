@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    {% for each_user in bob %}
+    <h3>{{ each_user.first_name }}</h3>
+    <p>{{ each_user.email_address }}</p>
+    {% endfor %}
+</body>
+</html>
