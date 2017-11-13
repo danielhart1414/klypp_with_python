@@ -1,0 +1,212 @@
+/*Page Layout*/
+body {
+    padding-top:50px;
+}
+
+.container {
+    max-width:1000px;
+    margin: auto;
+}
+
+.navbar {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 2em;
+    border-bottom: 3px solid;
+}
+
+.nav {
+    margin-top: 5px;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar-collapse {
+    border:none;
+}
+
+.btn {
+    border: none;
+}
+
+.jumbotron {
+    margin: 0;
+}
+
+.row {
+    padding: 10px 10px 20px;
+    font-size: 1.2em;
+    border-bottom: 3px solid #49494b;
+}
+
+.formBackground {
+    padding: 0;
+}
+
+.formBox {
+    max-width: 600px;
+    padding: 15px 20px 45px;
+}
+
+.mainFooter {
+    padding-bottom: 1px;
+}
+
+.footerText {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 2.2em;
+    }
+
+    .navbar {
+        padding-bottom: 0;
+    }
+
+    .index-nav {
+        padding-bottom: 15px;
+    }
+
+    .row {
+        padding: 20px;
+        border-radius: 5%;
+        margin-bottom: 25px;
+        border-bottom: none;     
+    }
+
+    .jumbotron {
+        border-radius: 5%;
+        margin: 92px auto 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .formBox {
+        padding: 15px 20px 85px;
+        border-radius: 25px;
+    }
+
+    .mainFooter {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 2.5em;
+    }
+
+    .navbar {
+        padding-bottom: 15px;
+    }
+
+    .jumbotron {
+        margin-top: 55px;
+    }
+}
+
+/*Sticky footer*/
+.pushTheFooter {
+    min-height: calc(100vh - 151px);
+}
+
+.pushTheFooter2 {
+    min-height: calc(100vh - 146px);
+}
+
+/*Color Scheme -- 5. Precious Metals found on https://timbdesign.com/website-color-schemes*/
+body {
+    background-color: #eee;
+}
+
+.jumbotron {
+    background-color: #49494b;
+    color: white;
+}
+
+.navbar {
+    background-color: white;
+    color: #000;
+    border-bottom-color: #d1bfa7;
+}
+
+.btn-success {
+    background-color: #8e8e90;
+    color: white;
+}
+
+.btn-submit {
+    background-color: #49494b;
+    color: white;
+}
+
+.btn-default {
+    background-color: #bd8c7d;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: white;
+    color: #8e8e90;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: #49494b;
+}
+
+.btn-default:hover {
+    background-color: white;
+    color: #bd8c7d;
+}
+
+.btn-success:active:focus {
+    background-color: #8e8e90;
+    color: white;
+}
+
+.btn-submit:active:focus {
+    background-color: #49494b;
+    color: white;
+}
+
+.btn-default:active:focus {
+    background-color: #bd8c7d;
+    color: white;
+}
+
+.btn-success:focus {
+    background-color: white;
+    color: #8e8e90;
+}
+
+.btn-submit:focus {
+    background-color: white;
+    color: #49494b;
+}
+
+.btn-default:focus {
+    background-color: white;
+    color: #bd8c7d;
+}
+
+.row {
+    background-color: #d1bfa7;
+}
+
+.formBox {
+    background-color: #d1bfa7;
+}
+
+.formBackground {
+    background-color: #eee;
+}
+
+.mainFooter {
+    background-color: #49494b;
+    color: white;
+}
