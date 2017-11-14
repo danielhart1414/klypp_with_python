@@ -1,0 +1,10 @@
+db.sqlite3
+.idea/
+.pyc
+*__pycache__*
+staticfiles/
+mediafiles/
+database/
+media/
+secrets.env
+env/
