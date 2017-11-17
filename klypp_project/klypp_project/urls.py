@@ -18,6 +18,10 @@ from django.conf.urls import include
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import views
+from django.conf import settings
+if settings.DEBUG:
+    import debug_toolbar
+
 
 
 urlpatterns = [
@@ -27,3 +31,7 @@ urlpatterns = [
 ]
 
 urlpatterns += staticfiles_urlpatterns()
+
+urlpatterns += [
+    url(r'^__debug__/', include(debug_toolbar.urls)),
+]

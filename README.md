@@ -5,7 +5,7 @@ other people.
 
 # To set up your environment, run the following commands:
 python -m venv env
-source env/Scripts/activate
+source env/bin/activate (or env\Scripts\activate on a Windows machine)
 python -m pip install -r requirements.txt
 
 Then, run
